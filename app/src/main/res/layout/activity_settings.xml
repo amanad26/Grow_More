@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.SettingsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_back" />
+
+
+            <ImageView
+                android:id="@+id/update_save_changes"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_right_svg"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:id="@+id/update_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:inputType="text"
+                android:text="Setting"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey_font"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_18sdp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/About"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:text="About"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey_font"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="#759E9E9E" />
+
+
+            <TextView
+                android:id="@+id/termsAndCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:text="Terms And Condition"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey_font"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="#759E9E9E" />
+
+            <TextView
+                android:id="@+id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:text="Privacy Policy"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey_font"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="#759E9E9E" />
+
+            <TextView
+                android:id="@+id/edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey_font"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="#759E9E9E" />
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:text="FAQ"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey_font"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="#759E9E9E" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

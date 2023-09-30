@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".ui.SignupActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_back"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_10sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Email Registration"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/phone_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Phone Registration"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:background="@drawable/custom_bg_login_body"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <EditText
+                android:id="@+id/edt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter Your name"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter your mobile number"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edt_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_gray"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter Verification Code"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Get Verification Code"
+                    android:textColor="#FA072A"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter a 6-15 digit password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter the 6-15 digit password again"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/edt_invitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter the invitation code"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/with_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter withdraw password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Note :- Don't forgot your withdraw password "
+                android:textColor="@color/red_btn_bg_color" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:cardBackgroundColor="@color/color_primary"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/login_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/body"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Already have an account? "
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Log in Now"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/check_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:padding="-5dp"
+                        android:text="i know and agree"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text=" ⟨Privacy Policy ⟩"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/terms_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:text=" Terms &amp; Conditions"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
